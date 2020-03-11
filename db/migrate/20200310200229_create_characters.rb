@@ -5,7 +5,6 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :description
       t.string :thumbnail
       t.string :image
-      t.integer :user_id
 
       t.timestamps
     end
