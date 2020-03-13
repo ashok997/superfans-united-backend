@@ -1,6 +1,6 @@
 user1 =User.create(name:'Ashok', email:'ashok@ashok.com')
 
-character1 =Character.create(name:'Thor', description:'short bio about Thor', thumbnail:'test', image:'test', user_id: 1)
+character1 =Character.create(name:'Thor', description:'short bio about Thor', thumbnail:'test', image:'test')
 
 character2 =Character.create(name:'Loki', description:'short bio about Loki', thumbnail:'test2', image:'test2')
 

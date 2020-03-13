@@ -286,3 +286,127 @@ Migrating to AddVotesToCharacters (20200311170744)
   [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ? LIMIT ?[0m  [["character_id", 1], ["LIMIT", 11]]
   [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY "characters"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ? LIMIT ?[0m  [["character_id", 1], ["LIMIT", 11]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUserCharacter Load (14.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" ORDER BY "user_characters"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" ORDER BY "user_characters"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUserCharacter Load (0.5ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" ORDER BY "user_characters"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-03-13 09:37:44 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.7ms | Allocations: 480)
+Completed 200 OK in 62ms (Views: 41.4ms | ActiveRecord: 0.0ms | Allocations: 2634)
+
+
+Started GET "/api/v1/credit_cards" for ::1 at 2020-03-13 09:37:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/credit_cards"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 09:37:59 -0500
+  
+SyntaxError (/Users/ashokmaharjan/Desktop/dev/flatiron_bootcamp/projects/superfans-united/superfans-united-backend/app/controllers/api/v1/characters_controller.rb:4: syntax error, unexpected ':'
+...er json: characters, include: : user_characters
+...                              ^
+/Users/ashokmaharjan/Desktop/dev/flatiron_bootcamp/projects/superfans-united/superfans-united-backend/app/controllers/api/v1/characters_controller.rb:9: syntax error, unexpected ':'
+...der json: character, include: : user_characters
+...                              ^):
+  
+app/controllers/api/v1/characters_controller.rb:4: syntax error, unexpected ':'
+app/controllers/api/v1/characters_controller.rb:9: syntax error, unexpected ':'
+app/controllers/api/v1/characters_controller.rb:4: syntax error, unexpected ':'
+app/controllers/api/v1/characters_controller.rb:9: syntax error, unexpected ':'
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 09:40:01 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.8ms | Allocations: 7638)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-03-13 09:40:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 09:40:40 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.7ms | Allocations: 8974)
+
+
+  
+NoMethodError (undefined method `user_character' for #<Character:0x00007ff2ba9afba0>
+Did you mean?  user_characters
+               user_characters=
+               user_character_ids):
+  
+app/controllers/api/v1/characters_controller.rb:4:in `index'
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 09:40:54 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (13.9ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 116ms (Views: 99.2ms | ActiveRecord: 15.2ms | Allocations: 16653)
+
+
