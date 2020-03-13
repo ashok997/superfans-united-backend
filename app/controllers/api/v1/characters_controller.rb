@@ -9,6 +9,10 @@ class Api::V1::CharactersController < ApplicationController
         render json: character
     end
 
+    def show
+        character = Character.find_by_id(params[:id])
+        render json: character, include: :user_characters
+    end
 
     private
     def character_params
