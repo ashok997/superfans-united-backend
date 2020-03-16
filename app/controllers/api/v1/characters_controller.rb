@@ -1,7 +1,7 @@
 class Api::V1::CharactersController < ApplicationController
     def index
         characters = Character.all
-        render json: characters, include: :user_characters
+        render json: characters, include:{user_characters:{include: :user}} 
     end
 
     def create
