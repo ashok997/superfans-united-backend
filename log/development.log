@@ -534,3 +534,1092 @@ Processing by Api::V1::CharactersController#show as HTML
 Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1723)
 
 
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 10:35:02 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 199ms (Views: 98.6ms | ActiveRecord: 1.6ms | Allocations: 17249)
+
+
+Started GET "/" for ::1 at 2020-03-13 10:38:20 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 23.6ms | Allocations: 315)
+Completed 200 OK in 106ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 1593)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 10:38:33 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 3163)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 10:38:40 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.5ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 10:39:21 -0500
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.7ms | Allocations: 3156)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 10:39:42 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 3144)
+
+
+Started GET "/" for ::1 at 2020-03-13 11:01:19 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 27.5ms | Allocations: 190)
+Completed 200 OK in 79ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 722)
+
+
+Started GET "/" for ::1 at 2020-03-13 11:07:56 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 237)
+
+
+Started GET "/" for ::1 at 2020-03-13 11:08:13 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 11:13:06 -0500
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 3192)
+
+
+Started GET "/manifest.json" for ::1 at 2020-03-13 11:51:31 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static/js/bundle.js.map" for ::1 at 2020-03-13 11:51:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/bundle.js.map"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static/js/0.chunk.js.map" for ::1 at 2020-03-13 11:51:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/0.chunk.js.map"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static/js/main.chunk.js.map" for ::1 at 2020-03-13 11:51:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/main.chunk.js.map"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 12:02:29 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (32.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.4ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 482ms (Views: 163.8ms | ActiveRecord: 34.4ms | Allocations: 17251)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 12:02:48 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.5ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 12:03:44 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 3163)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 12:04:08 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 12:05:10 -0500
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms | Allocations: 3143)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 12:06:06 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.4ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 12:12:00 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms | Allocations: 3197)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 19:43:14 -0500
+  [1m[35m (13.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 204ms (Views: 115.5ms | ActiveRecord: 2.7ms | Allocations: 17249)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 19:43:58 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 3164)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 19:44:51 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters/1" for ::1 at 2020-03-13 19:46:01 -0500
+Processing by Api::V1::CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:13:in `show'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:14:in `show'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1909)
+
+
+Started GET "/" for ::1 at 2020-03-13 19:46:12 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.3ms | Allocations: 315)
+Completed 200 OK in 66ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 1591)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 19:46:36 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 3163)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 20:47:35 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.4ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 82ms (Views: 58.4ms | ActiveRecord: 3.1ms | Allocations: 17251)
+
+
+Started GET "/" for ::1 at 2020-03-13 20:47:44 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 35.6ms | Allocations: 315)
+Completed 200 OK in 49ms (Views: 44.1ms | ActiveRecord: 0.0ms | Allocations: 1593)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 20:47:52 -0500
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.9ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.2ms | Allocations: 3164)
+
+
+Started GET "/api/v1/characters/1" for ::1 at 2020-03-13 20:47:53 -0500
+Processing by Api::V1::CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCharacter Load (15.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:13:in `show'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:14:in `show'
+Completed 200 OK in 19ms (Views: 2.1ms | ActiveRecord: 15.5ms | Allocations: 1912)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 20:55:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.5ms | Allocations: 3197)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-13 21:00:09 -0500
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 3161)
+
+
+Started GET "/api/v1/users/1" for ::1 at 2020-03-13 21:00:13 -0500
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:20:in `show'
+Completed 200 OK in 36ms (Views: 2.6ms | ActiveRecord: 12.9ms | Allocations: 6891)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 10:15:25 -0500
+  [1m[35m (21.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (5.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (17.0ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 312ms (Views: 195.5ms | ActiveRecord: 23.9ms | Allocations: 17291)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 10:16:55 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 10:56:43 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.4ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 136ms (Views: 89.2ms | ActiveRecord: 1.8ms | Allocations: 17259)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 11:19:09 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.4ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 1.0ms | Allocations: 3197)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 11:19:13 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.4ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.7ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 12:48:34 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.4ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 1.0ms | Allocations: 3197)
+
+
+Started GET "/" for ::1 at 2020-03-14 12:51:06 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 22.4ms | Allocations: 315)
+Completed 200 OK in 108ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 1592)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 13:17:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (2.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (4.0ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 5.3ms | ActiveRecord: 6.9ms | Allocations: 3185)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 14:37:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.3ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.8ms | Allocations: 3197)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 14:50:07 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 3185)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 14:53:10 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 14:54:12 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:37:49 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 158ms (Views: 116.2ms | ActiveRecord: 4.4ms | Allocations: 17251)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:37:51 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.5ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.7ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:38:23 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.4ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 3163)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:43:59 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 3197)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:45:56 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:49:15 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:49:38 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:53:39 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:54:03 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:58:02 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 15:58:15 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:01:49 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:03:25 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:04:36 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:04:42 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (2.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 2.5ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:10:31 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 3185)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:10:34 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:14:56 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:16:06 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:17:25 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:17:39 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:18:18 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.4ms | Allocations: 3147)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:18:27 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-14 16:18:57 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/" for ::1 at 2020-03-16 09:40:15 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ashokmaharjan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 28.3ms | Allocations: 315)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.0ms | Allocations: 1595)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 09:40:21 -0500
+Processing by Api::V1::CharactersController#index as HTML
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.7ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 157ms (Views: 78.5ms | ActiveRecord: 2.6ms | Allocations: 17263)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 09:42:21 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 3163)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 09:49:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (2.7ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 3.1ms | Allocations: 3198)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 09:51:42 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 09:52:18 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.3ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 3162)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 09:59:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (1.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 1.7ms | Allocations: 3185)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:00:52 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:00:58 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:01:37 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 3144)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:01:42 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 3144)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (18.1ms)[0m  [1m[32mINSERT INTO "characters" ("name", "description", "thumbnail", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "IronMan"], ["description", "short bio Iron-Man"], ["thumbnail", "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55.jpg"], ["image", "test"], ["created_at", "2020-03-16 15:07:53.302897"], ["updated_at", "2020-03-16 15:07:53.302897"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:08:20 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.3ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 265ms (Views: 244.0ms | ActiveRecord: 2.5ms | Allocations: 18348)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:09:14 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 4218)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:10:41 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.4ms | Allocations: 4218)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:11:44 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms | Allocations: 4200)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:12:20 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 4200)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:13:06 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 4218)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:13:46 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 1.1ms | Allocations: 4200)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:14:09 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 4200)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:14:25 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 4200)
+
+
+Started GET "/api/v1/characters" for ::1 at 2020-03-16 10:14:52 -0500
+Processing by Api::V1::CharactersController#index as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.1ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+  [1m[36mUserCharacter Load (0.2ms)[0m  [1m[34mSELECT "user_characters".* FROM "user_characters" WHERE "user_characters"."character_id" = ?[0m  [["character_id", 3]]
+  ↳ app/controllers/api/v1/characters_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 4200)
+
+
