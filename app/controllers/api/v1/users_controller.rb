@@ -23,6 +23,6 @@ class Api::V1::UsersController < ApplicationController
 
     private
     def character_params
-        params.require(:character).permit(:name,:email)
+        params.require(:character).permit(:name,:description, :thumbnail, :image)
     end
 end
