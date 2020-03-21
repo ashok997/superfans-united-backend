@@ -5,7 +5,7 @@ class Api::V1::CharactersController < ApplicationController
     end
 
     def create
-        character = Character.create(character_params)
+        character = Character.find_or_create_by(character_params)
         render json: character
     end
 
