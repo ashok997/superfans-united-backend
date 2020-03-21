@@ -18,7 +18,7 @@ class Api::V1::UserCharactersController < ApplicationController
     end
 
     def character_params
-        params.require(:character).permit(:name)
+        params.require(:character).permit(:id)
     end
     
 
