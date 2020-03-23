@@ -1,7 +1,9 @@
 class Api::V1::UsersController < ApplicationController
+
     def index
         users = User.all
-        render json: users, include: :user_characters
+        render json: users, include:{characters: {include: :user_characters}}
+      
     end
 
     def create
@@ -16,13 +18,13 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def show
-        user = User.first
+        user = User.find_by_id(params[:id])
         render json: user, include: :user_characters
     end
 
 
     private
-    def character_params
-        params.require(:character).permit(:name,:description, :thumbnail, :image)
-    end
+      def user_params
+        params.require(:user).permit(:name,:email)
+      end
 end
