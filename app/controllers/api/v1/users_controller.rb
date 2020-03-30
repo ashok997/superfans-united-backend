@@ -12,7 +12,7 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def update
-        user = User.first
+        user = User.last
         user.update(user_params)
         render json: user
     end
