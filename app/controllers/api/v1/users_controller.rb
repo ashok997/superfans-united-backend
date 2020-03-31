@@ -8,7 +8,11 @@ class Api::V1::UsersController < ApplicationController
 
     def create
         user = User.create(user_params)
-        render json: user
+        if user.save
+            render json: user
+        else 
+            render json: user.errors, status: :bad_request
+        end
     end
 
     def update

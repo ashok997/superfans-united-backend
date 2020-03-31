@@ -6,7 +6,11 @@ class Api::V1::CharactersController < ApplicationController
 
     def create
         character = current_user.characters.find_or_create_by(character_params)
-        render json: character
+        if character.save
+            render json: character
+        else
+            render json: character.errors, status: :bad_request
+        end
     end
 
     def show

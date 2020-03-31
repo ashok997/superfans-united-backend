@@ -7,7 +7,11 @@ class Api::V1::UserCharactersController < ApplicationController
         user_character = user.user_characters.new(details_params)
         user_character.character_id = character.id
         user_character.save
-        render json: character, include:{user_characters:{include: :user}} 
+        if user_character.save
+            render json: character, include:{user_characters:{include: :user}}
+        else 
+            render json: character.errors, status: :bad_request
+        end  
     end
 
     private
