@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get '/signup' => 'api/v1/users#new'
+  post '/signup' => 'api/v1/users#create'
+
+
   namespace :api do
     namespace :v1 do
     resources :characters
