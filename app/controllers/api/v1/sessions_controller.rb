@@ -13,7 +13,7 @@ class Api::V1::SessionsController < ApplicationController
 
     def get_current_user
       if logged_in?
-        render json: get_current_user
+        render json: current_user
       else
         render json: {
           message: "No one logged in"
