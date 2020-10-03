@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get '/signup' => 'api/v1/users#new'
-  post '/signup' => 'api/v1/users#create'
+  get '/api/v1/signup' => 'api/v1/users#new'
+  post '/api/v1/signup' => 'api/v1/users#create'
 
   post '/api/v1/login' =>'api/v1/sessions#create'
   delete '/api/v1/logout' =>'api/v1/sessions#destroy'
