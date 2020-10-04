@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
         render json: users, include:{characters: {include: :user_characters}}
     end
 
-
+    
     def create
         params[:user][:password] = params[:password]
         user = User.create(user_params)

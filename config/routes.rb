@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get '/api/v1/signup' => 'api/v1/users#new'
   post '/api/v1/signup' => 'api/v1/users#create'
 
   post '/api/v1/login' =>'api/v1/sessions#create'
